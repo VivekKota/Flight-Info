@@ -1,0 +1,60 @@
+:host {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+.status-container {
+  text-align: center;
+  padding: 20px;
+  display: none; /* Initially hide both containers */
+}
+
+.icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success .icon::before {
+  background-color: rgba(76, 175, 80, 0.2); /* Light green background */
+}
+
+.failure .icon::before {
+  background-color: rgba(244, 67, 54, 0.2); /* Light red background */
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}

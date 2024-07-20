@@ -1,0 +1,33 @@
+<div class="status-container success" id="success-message">
+  <div class="icon">
+    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="12" fill="#4CAF50" />
+      <path
+        d="M7 13l3 3 7-7"
+        stroke="#fff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </div>
+  <h1>Thank You!</h1>
+  <p>{{ successMessage }}</p>
+</div>
+
+<div class="status-container failure" id="failure-message">
+  <div class="icon">
+    <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="12" fill="#F44336" />
+      <path
+        d="M15 9l-6 6M9 9l6 6"
+        stroke="#fff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </div>
+  <h1>Submission Failed</h1>
+  <p>{{ failureMessage }}</p>
+</div>

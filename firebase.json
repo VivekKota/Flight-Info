@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/flight-info-form/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
